@@ -3,13 +3,17 @@ using namespace std;
 
 struct User{
     string nama;
-    int id;
+    
 };
 
 string Lokasi[4] = {"Rajabasa","Way Halim","Kedaton","Sukarame"};
 
 int main(){
-    int asal,tujuan;
+    int asal, tujuan;
+    User user;
+    
+    cout << "Masukan Username : ";
+    getline(cin,user.nama);
     cout<<"Selamat Datang Di Aplikasi Ojek Online"<<endl;
     cout<<"Silakan masukkan lokasi awal dan tujuan"<<endl;
     cout<<"1. Rajabasa"<<endl;
