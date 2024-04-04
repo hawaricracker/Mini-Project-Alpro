@@ -62,13 +62,17 @@ void menu(bool stat){
         cout<<"2. Mobil"<<endl;
         cout<<"Jawab: ";
         cin>>kendaraan;
-        cout<<"Menghitung Harga....."<<endl;
         int harga = Harga(asal, tujuan, kendaraan);
-        cout<<"Harga yang didapat adalah: "<<harga<<endl;
-        cout<<"Menghitung Discount....."<<endl;
-        double discount = Discount();
-        cout<<"Discount yang didapat adalah: "<<discount<<"%"<<endl;
-        cout<<"Harga total adalah: "<<Total(harga, discount)<<endl;
+	if(tujuan,asal >= 1 && tujuan,asal <= 4 && kendaraan <= 2 && kendaraan >= 1) {
+	        cout<<"Menghitung Harga....."<<endl;
+	        cout<<"Harga yang didapat adalah: "<<harga<<endl;
+	        cout<<"Menghitung Discount....."<<endl;
+	        double discount = Discount();
+	        cout<<"Discount yang didapat adalah: "<<discount<<"%"<<endl;
+	        cout<<"Harga total adalah: "<<Total(harga, discount)<<endl;
+	} else {
+		cout << "error pada inputan asal, tujuan, dan kendaraan" << endl;
+	}
     }else{
         cout<<"Berakhir";
     }
